@@ -1,10 +1,16 @@
+print 'Welcome to the Pig Latin Translator!'
+
+# Start coding here!
 print "Pig Latin"
-s = raw_input("Enter a word:")
-print ("s is " + s)
-prefix = s[0:1]
-print ( "prefix is " + prefix)
-baselength = len(s)
-print "base is ", baselength
-base = s[1:baselength]
-print ("base is " + base)
-print "Answer is : " + base + prefix + "ay"
+original = raw_input("Enter a word:")
+if len(original) > 0:
+    print ("The word entered is : " + original)
+    prefix = original[0:1]
+    print ( "First character is : " + prefix)
+    baselength = len(original)
+    print "Original length is : ", baselength
+    base = original[1:baselength]
+    print ("base is " + base)
+    print "Answer is : " + base + prefix + "ay"
+else:
+    print "empty"
