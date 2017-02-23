@@ -16,5 +16,8 @@ def rental_car_cost(days):
         return (days * 40) - 20
     else: 
         return (days * 40)
+def trip_cost(city, days):
+    return rental_car_cost(days) + hotel_cost(days) + plane_ride_cost(city)
+        
     
-    
+trip_cost('Tampa', 3)
