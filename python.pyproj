@@ -25,6 +25,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="PigLatin.py" />
+    <Compile Include="restRequest.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="travelcost.py" />
   </ItemGroup>
   <ItemGroup>
